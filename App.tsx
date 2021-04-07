@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -8,32 +9,26 @@
  * @format
  */
 
- import React from 'react';
- import {
-   SafeAreaView,
-   StatusBar,
-   useColorScheme,
-   View
- } from 'react-native';
+import React from "react";
+import {SafeAreaView, StatusBar, useColorScheme, View} from "react-native";
 
- import TodoScreen from './src/screens/TodoScreen';
+import TodoScreen from "./src/screens/TodoScreen";
 
- const App = () => {
-   const isDarkMode = useColorScheme() === 'dark';
- 
-   const backgroundStyle = {
-     backgroundColor: isDarkMode ? '#222' : '#F3F3F3',
-   };
- 
-   return (
-     <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <View style={{display: 'flex'}}>
+const App = () => {
+  const isDarkMode = useColorScheme() === "dark";
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? "#222" : "#F3F3F3",
+  };
+
+  return (
+    <SafeAreaView style={backgroundStyle}>
+      <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
+      <View style={{display: "flex"}}>
         <TodoScreen />
-       </View>
-     </SafeAreaView>
-   );
- };
- 
- export default App;
- 
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default App;

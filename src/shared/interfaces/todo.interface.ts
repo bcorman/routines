@@ -10,6 +10,7 @@ export interface TodoDetail {
   owner?: string;
   complete: Boolean;
   completedOn?: Date;
+  id: number;
 }
 
 export type TodoList = [TodoDetail] | [];

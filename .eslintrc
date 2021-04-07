@@ -3,21 +3,31 @@
   "extends": [
     "@react-native-community",
     "airbnb-typescript",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
   "plugins": [
     "@typescript-eslint"
   ],
   "rules": {
     "quotes": [
-      "warning",
+      "warn",
       "double",
       {
         "allowTemplateLiterals": true
       }
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "react/prefer-stateless-function": [
+      "off"
     ]
   }
 }
