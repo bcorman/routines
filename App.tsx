@@ -11,9 +11,9 @@
  import React from 'react';
  import {
    SafeAreaView,
-   ScrollView,
    StatusBar,
    useColorScheme,
+   View
  } from 'react-native';
 
  import TodoScreen from './src/screens/TodoScreen';
@@ -28,7 +28,9 @@
    return (
      <SafeAreaView style={backgroundStyle}>
        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <TodoScreen />
+       <View style={{display: 'flex'}}>
+        <TodoScreen />
+       </View>
      </SafeAreaView>
    );
  };

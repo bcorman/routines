@@ -12,9 +12,8 @@ class TodoForm extends Component {
   render() {
     return (
       <View style={styles.todoForm}>
-        <Text>Add a todo</Text>
         <TextInput/>
-        <Button onPress={()=> alert('Submitted')} title="Submit"></Button>
+        <Button onPress={()=> alert('Submitted')} title="Add Todo"></Button>
       </View>
     )
   }
@@ -22,8 +21,16 @@ class TodoForm extends Component {
 
 const styles = StyleSheet.create({
   todoForm: {
-    flex: 1,
-    backgroundColor: 'green'
+    borderRadius: 5,
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: 'black',
+    overflow: 'hidden',
+    margin: 5,
+    padding: 5,
+    backgroundColor: 'white',
+    display: 'flex',
+    alignItems: 'center'
   }
 })
 

@@ -31,10 +31,10 @@ class TodoScreen extends Component<{}, TodoScreenState> {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 10,
+    margin: '2%',
+    padding: 5,
     display: 'flex',
-    backgroundColor: 'blue',
-    justifyContent: 'space-between'
+    height: '98%',
   }
 })
 
